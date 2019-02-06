@@ -1,4 +1,5 @@
-class PostsController < ApplicationController
+class PostsController < ApplicationControlle
+  helper_metnod :params  
 
   def index
     @posts = Post.all
