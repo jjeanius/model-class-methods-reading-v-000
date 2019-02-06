@@ -1,13 +1,13 @@
 class Post < ActiveRecord::Base
 
-  validate :is_title_case 
-  before_validation :make_title_case 
+  validate :is_title_case
+  before_validation :make_title_case
   belongs_to :author
 
   #put new code here
   def index
   @authors = Author.all
- 
+
   if !params[:author].blank?
     @posts = Post.where(author: params[:author])
   elsif !params[:date].blank?
