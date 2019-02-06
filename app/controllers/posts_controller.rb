@@ -1,4 +1,4 @@
-class PostsController < ApplicationControlle
+class PostsController < ApplicationController
   helper_metnod :params
 
   def index
